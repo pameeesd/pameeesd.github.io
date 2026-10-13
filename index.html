@@ -1,39 +1,188 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Portafolio</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portafolio de Pamela Salas, desarrolladora en formación con proyectos full-stack, mobile, automatización e IA aplicada.">
+  <meta property="og:title" content="Pamela Salas | Portafolio">
+  <meta property="og:description" content="Proyectos en Python, Django, React Native, SwiftUI, TypeScript e IA aplicada.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://pameeesd.github.io/">
+  <title>Pamela Salas | Portafolio</title>
+  <link rel="preconnect" href="https://github.com">
+  <link rel="preconnect" href="https://avatars.githubusercontent.com">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Tu Nombre</h1>
-        <p>Estudiante de Ingeniería en Informática</p>
-    </header>
-    <section>
-        <h2>Sobre mí</h2>
-        <p>Soy estudiante de tercer año de Ingeniería en Informática, apasionado/a por la arquitectura de software y el desarrollo web.</p>
+  <header class="site-header">
+    <a class="brand" href="#inicio" aria-label="Inicio">PS</a>
+    <nav aria-label="Navegación principal">
+      <a href="#proyectos">Proyectos</a>
+      <a href="#stack">Stack</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <main id="inicio">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow">Desarrollo full-stack, mobile e IA aplicada</p>
+        <h1 id="hero-title">Pamela Salas</h1>
+        <p class="lead">
+          Construyo productos digitales con foco en arquitectura clara, experiencia de usuario y soluciones prácticas:
+          desde e-commerce con Django hasta apps mobile, APIs, automatización y herramientas con IA.
+        </p>
+        <div class="hero-actions" aria-label="Enlaces principales">
+          <a class="button primary" href="https://github.com/pameeesd" target="_blank" rel="noreferrer">Ver GitHub</a>
+          <a class="button secondary" href="https://www.linkedin.com/in/pamela-salas-a89789175/" target="_blank" rel="noreferrer">LinkedIn</a>
+        </div>
+      </div>
+      <div class="profile-panel" aria-label="Resumen profesional">
+        <img src="https://github.com/pameeesd.png" alt="Foto de perfil de Pamela Salas en GitHub">
+        <div>
+          <p class="panel-title">Perfil técnico</p>
+          <p>Python · Django · TypeScript · React Native · SwiftUI · Docker · GitHub Actions</p>
+        </div>
+      </div>
     </section>
-    <section>
-        <h2>Habilidades</h2>
-        <ul>
-            <li>Python</li>
-            <li>HTML & CSS</li>
-            <li>Git & GitHub</li>
-        </ul>
+
+    <section class="section intro" aria-labelledby="about-title">
+      <div>
+        <p class="section-kicker">Sobre mí</p>
+        <h2 id="about-title">Desarrolladora que aprende construyendo.</h2>
+      </div>
+      <p>
+        Mi portafolio reúne proyectos de backend, frontend, mobile y automatización. Me interesa convertir ideas en
+        productos usables, documentados y mantenibles, con especial atención a flujos reales, pruebas, despliegue y
+        decisiones técnicas explicables.
+      </p>
     </section>
-    <section>
-        <h2>Proyectos Destacados</h2>
-        <ul>
-            <li><a href="https://github.com/tu-usuario/proyecto1">Proyecto 1</a></li>
-            <li><a href="https://github.com/tu-usuario/proyecto2">Proyecto 2</a></li>
-        </ul>
+
+    <section class="section" id="proyectos" aria-labelledby="projects-title">
+      <div class="section-heading">
+        <p class="section-kicker">Trabajo destacado</p>
+        <h2 id="projects-title">Proyectos seleccionados</h2>
+      </div>
+
+      <div class="project-grid">
+        <article class="project-card featured">
+          <div class="project-meta">
+            <span>Full-stack</span>
+            <span>Python / Django</span>
+          </div>
+          <h3>JRBStore</h3>
+          <p>
+            Plataforma e-commerce con catálogo, carrito por sesiones, autenticación, panel administrativo, historial de
+            ventas, testing automatizado, Docker y pipeline CI/CD con GitHub Actions.
+          </p>
+          <a href="https://github.com/pameeesd/JRBStore" target="_blank" rel="noreferrer">Abrir repositorio</a>
+        </article>
+
+        <article class="project-card">
+          <div class="project-meta">
+            <span>Mobile</span>
+            <span>React Native / Expo</span>
+          </div>
+          <h3>SoccerMatch</h3>
+          <p>
+            App dark-mode para métricas de fútbol amateur en Chile, con arquitectura por roles, design system, Expo
+            Router, TanStack Query, Zustand y componentes reutilizables.
+          </p>
+          <a href="https://github.com/pameeesd/SoccerMatch" target="_blank" rel="noreferrer">Abrir repositorio</a>
+        </article>
+
+        <article class="project-card">
+          <div class="project-meta">
+            <span>Backend</span>
+            <span>TypeScript</span>
+          </div>
+          <h3>SoccerMatchAPI</h3>
+          <p>
+            API complementaria para el ecosistema SoccerMatch, enfocada en separar la lógica de producto, datos y
+            servicios para una experiencia mobile escalable.
+          </p>
+          <a href="https://github.com/pameeesd/SoccerMatchAPI" target="_blank" rel="noreferrer">Abrir repositorio</a>
+        </article>
+
+        <article class="project-card">
+          <div class="project-meta">
+            <span>iOS</span>
+            <span>SwiftUI / SwiftData</span>
+          </div>
+          <h3>HabitLock</h3>
+          <p>
+            App iOS offline-first para planificar hábitos y agenda desde la pantalla de bloqueo, integrando WidgetKit,
+            App Intents, EventKit y notificaciones locales.
+          </p>
+          <a href="https://github.com/pameeesd/habitlock" target="_blank" rel="noreferrer">Abrir repositorio</a>
+        </article>
+
+        <article class="project-card">
+          <div class="project-meta">
+            <span>IA aplicada</span>
+            <span>Python / OCR</span>
+          </div>
+          <h3>Tesseract OCR Spanish</h3>
+          <p>
+            Exploración de OCR en español con Tesseract, orientada a extraer texto desde imágenes y documentos con
+            procesamiento reproducible.
+          </p>
+          <a href="https://github.com/pameeesd/tesseract-ocr-spanish" target="_blank" rel="noreferrer">Abrir repositorio</a>
+        </article>
+
+        <article class="project-card">
+          <div class="project-meta">
+            <span>Web utility</span>
+            <span>HTML / CSS / JS</span>
+          </div>
+          <h3>BG Remover App</h3>
+          <p>
+            Herramienta web para remover fondos, parte de una línea de proyectos utilitarios que combinan interfaces
+            simples con automatización práctica.
+          </p>
+          <a href="https://github.com/pameeesd/bg-remover-app" target="_blank" rel="noreferrer">Abrir repositorio</a>
+        </article>
+      </div>
     </section>
-    <footer>
-        <p>Conéctate conmigo:</p>
-        <a href="https://github.com/tu-usuario">GitHub</a> |
-        <a href="https://linkedin.com/in/tu-usuario">LinkedIn</a>
-    </footer>
+
+    <section class="section split" id="stack" aria-labelledby="stack-title">
+      <div>
+        <p class="section-kicker">Stack</p>
+        <h2 id="stack-title">Tecnologías que aparecen en mi trabajo</h2>
+      </div>
+      <div class="skill-cloud" aria-label="Lista de tecnologias">
+        <span>Python</span>
+        <span>Django</span>
+        <span>TypeScript</span>
+        <span>React Native</span>
+        <span>Expo</span>
+        <span>SwiftUI</span>
+        <span>SwiftData</span>
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>JavaScript</span>
+        <span>Docker</span>
+        <span>GitHub Actions</span>
+        <span>SQLite</span>
+        <span>Testing</span>
+        <span>OCR</span>
+      </div>
+    </section>
+
+    <section class="section contact" id="contacto" aria-labelledby="contact-title">
+      <div>
+        <p class="section-kicker">Contacto</p>
+        <h2 id="contact-title">Conversemos sobre productos, código y nuevas oportunidades.</h2>
+      </div>
+      <div class="contact-actions">
+        <a class="button primary" href="https://www.linkedin.com/in/pamela-salas-a89789175/" target="_blank" rel="noreferrer">Contactar por LinkedIn</a>
+        <a class="button secondary" href="https://github.com/pameeesd" target="_blank" rel="noreferrer">Explorar GitHub</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 Pamela Salas. Portafolio publicado con GitHub Pages.</p>
+  </footer>
 </body>
 </html>
